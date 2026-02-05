@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #050b12;
+    color: #e6e6e6;
+    line-height: 1.6;
+}
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+section {
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+h2 {
+    margin-bottom: 15px;
+}
+
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#etica-legal {
+    background: linear-gradient(180deg, #0b1a2a, #050b12);
+}
+
+
+#gestao-projetos {
+    background: linear-gradient(180deg, #0a1c2f, #061018);
+}
+
+#git-github {
+    background: linear-gradient(180deg, #081520, #03070b);
+}
+
+#docker {
+    background: linear-gradient(180deg, #050b12, #020406);
+}
+#rodape-final {
+    position: relative;
+    color: #bfbfbf;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    border-top: 1px solid #1a2a3a;
+    overflow: hidden;
+}
+
+/* imagem escondida */
+#rodape-final::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 120px;
+    height: 120px;
+
+    background-image: url("imagem.img/Luigi.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    opacity: 0.05; /* quase invisível */
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+/* quando passar o mouse */
+#rodape-final :hover::after {
+    opacity: 0.25;
+}
+
